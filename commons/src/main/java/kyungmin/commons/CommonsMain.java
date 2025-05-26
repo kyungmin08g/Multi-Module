@@ -1,11 +1,11 @@
-package kyungmin;
+package kyungmin.commons;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Main {
+public class CommonsMain {
   public static void main(String[] args) {
-    SpringApplication.run(kyungmin.multimodule.MultiModuleApplication.class, args);
+    SpringApplication.run(CommonsMain.class, args);
   }
 }
