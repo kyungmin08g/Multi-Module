@@ -1,3 +1,7 @@
 spring:
   config:
     import: application-core.yml
+
+springdoc:
+  swagger-ui:
+    path: /api/

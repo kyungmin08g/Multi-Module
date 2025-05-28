@@ -1,5 +1,6 @@
 package kyungmin.multimodule.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import kyungmin.multimodule.controller.request.CreateTestRequest;
 import kyungmin.multimodule.service.TestService;
 import lombok.RequiredArgsConstructor;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping(value = "/test")
+@Tag(name = "테스트 관련 API")
 public class TestController {
   private final TestService service;
 
