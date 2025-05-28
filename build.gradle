@@ -39,6 +39,12 @@ subprojects {
     }
 }
 
+project(':api') {
+    dependencies {
+        implementation project(':core')
+    }
+}
+
 test {
     useJUnitPlatform()
 }
