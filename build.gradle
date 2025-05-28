@@ -45,10 +45,19 @@ subprojects {
     }
 }
 
+project(':core') {
+    bootJar { enabled = false }
+    jar { enabled = true }
+}
+
 project(':api') {
     dependencies {
         implementation project(':core')
     }
+}
+
+clean {
+    delete file('src/main/generated')
 }
 
 test {
