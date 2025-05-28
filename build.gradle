@@ -44,15 +44,3 @@ subprojects {
 test {
     useJUnitPlatform()
 }
-
-project(':api') {
-    dependencies {
-        implementation project(':core')
-    }
-}
-
-project(':db') {
-    dependencies {
-        implementation project(':core')
-    }
-}
