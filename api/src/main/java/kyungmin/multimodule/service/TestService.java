@@ -21,6 +21,6 @@ public class TestService {
   }
 
   public String getTitle(String id) {
-    return repository.findById(Long.parseLong(id)).get().getTitle();
+    return repository.getById(Long.parseLong(id)).getTitle();
   }
 }
