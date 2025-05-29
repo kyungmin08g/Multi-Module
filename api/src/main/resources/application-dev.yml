@@ -1,0 +1,7 @@
+spring:
+  config:
+    import: application-dev.yml
+
+springdoc:
+  swagger-ui:
+    path: /api-dev/
